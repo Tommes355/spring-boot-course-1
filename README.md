@@ -1,2 +1,1 @@
-# spring-boot-course-1
-ddcdcd
+# spring-boot-course
