@@ -7,10 +7,20 @@
         <title>List Todos Page</title>
     </head>
     <body>
-        <div class="container">
-            <h1>Your Todos</h1> 
-            <table class="table">
-                <thead>
+        <div>Welcome ${name}</div>
+        <hr> 
+        <h1>Your Todos</h1> 
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Description</th>
+                    <th>Target Date</th>
+                    <th>Is Done?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <c:forEach items="${todos}" var="todo">
                     <tr>
                         <th>id</th>
                         <th>Description</th>
