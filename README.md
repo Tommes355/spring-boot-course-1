@@ -1,1 +1,1 @@
-# spring-boot-course
+# Spring Boot 3
