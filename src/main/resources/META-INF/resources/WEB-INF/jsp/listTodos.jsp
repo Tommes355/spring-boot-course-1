@@ -3,6 +3,7 @@
 <html>
     <head>
         <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
         <title>List Todos Page</title>
     </head>
     <body>
