@@ -20,16 +20,12 @@ import jakarta.validation.Valid;
 @SessionAttributes("name")
 public class TodoController {
 
-  
-
   public TodoController(TodoService todoService) {
     super();
     this.todoService = todoService;
   }
 
   private TodoService todoService;
-
-
 
   @RequestMapping("list-todos")
   public String listAllTodos(ModelMap model) {
@@ -39,10 +35,6 @@ public class TodoController {
 
     return "listTodos";
   }
-
-
-
-  
   
   @RequestMapping(value="add-todo", method = RequestMethod.GET)
   public String showNewTodoPage(ModelMap model) {
@@ -65,14 +57,12 @@ public class TodoController {
     return "redirect:list-todos";
   }
 
-
   @RequestMapping("delete-todo")
   public String deleteTodo(@RequestParam int id) {
     
     todoService.deleteById(id);
     return "redirect:list-todos";
   }
-
 
   @RequestMapping(value="update-todo", method = RequestMethod.GET)
   public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
@@ -98,7 +88,5 @@ public class TodoController {
     Authentication authentication = 
             SecurityContextHolder.getContext().getAuthentication();
     return authentication.getName();
-}
-
-
+  }
 }
