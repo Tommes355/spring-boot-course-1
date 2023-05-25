@@ -18,8 +18,12 @@ public class Question {
     private String description;
     private List<String> options;
     private String correctAnswer;
+
     public String getId() {
         return id;
+    }
+    public void setId(String id) {
+        this.id = id;
     }
     public String getDescription() {
         return description;
