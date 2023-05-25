@@ -35,6 +35,8 @@ public class Question {
         return "Question [id=" + id + ", description=" + description + ", options=" + options + ", correctAnswer="
                 + correctAnswer + "]";
     }
+    public void add(Question question) {
+    }
 
     
 

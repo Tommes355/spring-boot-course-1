@@ -75,4 +75,9 @@ public class SurveyService {
         return optionalQuestion.get();
     }
 
+    public void addNewSurveyQuestion(String surveyId, Question question) {
+        List<Question> questions = retrieveAllSurveyQuestions(surveyId);
+        questions.add(question);
+    }
+
 }
