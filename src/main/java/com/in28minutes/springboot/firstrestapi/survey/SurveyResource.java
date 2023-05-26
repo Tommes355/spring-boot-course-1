@@ -76,4 +76,16 @@ public class SurveyResource {
 
     }
 
+    
+    @RequestMapping(value = "/surveys/{surveyId}/questions/{questionId}", method = RequestMethod.PUT)
+    public ResponseEntity<Object> updateSurveyQuestion(@PathVariable String surveyId,
+            @PathVariable String questionId,
+            @RequestBody Question question) {
+
+        surveyService.updateSurveyQuestion(surveyId, questionId, question);
+
+        return ResponseEntity.noContent().build();
+
+    }
+
 }
