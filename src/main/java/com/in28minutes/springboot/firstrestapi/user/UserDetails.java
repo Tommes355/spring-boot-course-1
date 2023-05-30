@@ -14,6 +14,10 @@ public class UserDetails {
     private String name;
     private String role;
 
+    public UserDetails() {
+        
+    }
+
     public UserDetails(Long id, String name, String role) {
         this.name = name;
         this.role = role;
